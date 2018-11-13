@@ -6,7 +6,8 @@
 #include "transactions.h"
 class Statement
 {
-
+  const int MAX_DAY = 30;
+  const double RATE = .005;
   std::vector<Transactions> transactions;
   std::vector<double> daily_balance;
   double m_balance;
