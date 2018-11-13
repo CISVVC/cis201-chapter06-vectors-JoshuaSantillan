@@ -39,7 +39,8 @@ void Statement::balance(std::vector<Transactions> &v)
 {
 
    m_balance = 0;
-   for (int i = 0; i < v.size(); i++)
+
+   for (int i = 0; i < MAX_DAY; i++)
    {
       m_balance += v[i].get_transaction(); //v[i] is the same as v.at(i)
       daily_balance.push_back(m_balance);
@@ -62,29 +63,27 @@ void Statement::print()
 
 double Statement::min_daily_balance(const std::vector<double> &v) // The lowest monthly interest
 {
-   double interest = .005;
-   double m_min_balance = v[0]; 
+      double m_min_balance = v[0]; 
 
-   for (int i = 0; i < v.size(); i++)
+   for (int i = 0; i < MAX_DAY; i++)
    {
       if (v[i] < m_min_balance )
       {
          m_min_balance = v[i]; // if min balance is greater than v at i then its new minumum balance
       }
    }
-   return m_min_balance * interest;
+   return m_min_balance * RATE;
 }
 
 double Statement::average_daily_balance(const std::vector<double> &v) // balance divided by 30 (max days) to find the average interest of the month
 {
-   double interest = .005;
    double sum = 0.0;
 
-   for (int i = 0; i < v.size(); i++)
+   for (int i = 0; i < MAX_DAY; i++)
    {
       sum += v[i];
    }
     // adds vector up divides it by the month and then multilies it by the interest
-   return sum / 30 * interest;
+   return sum / 30 * RATE;
 
 }
