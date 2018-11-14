@@ -1,5 +1,5 @@
 /*
-File: main.cpp
+File: transactions.h
 Description: Transaction class decleration
 Email: santj96@gmail.com
 Date: Nov 9, 2018
