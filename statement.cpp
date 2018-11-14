@@ -84,6 +84,6 @@ double Statement::average_daily_balance(const std::vector<double> &v) // balance
       sum += v[i];
    }
     // adds vector up divides it by the month and then multilies it by the interest
-   return sum / 30 * RATE;
+   return (sum / MAX_DAY) * RATE;
 
 }
