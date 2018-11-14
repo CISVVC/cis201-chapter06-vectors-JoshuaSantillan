@@ -1,8 +1,9 @@
-#include<iostream>
-#include<vector>
-#include<string>
-#include "statement.h"
-#include "transactions.h"
+/*
+File: main.cpp
+Description: Transaction class functions that reads input from user to get data
+Email: santj96@gmail.com
+Date: Nov 9, 2018
+*/
 
 Transactions::Transactions() // Constructor
 {
