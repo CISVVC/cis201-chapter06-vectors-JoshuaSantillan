@@ -1,5 +1,5 @@
 /*
-File: main.cpp
+File: Transaction.cpp
 Description: Transaction class functions that reads input from user to get data
 Email: santj96@gmail.com
 Date: Nov 9, 2018
