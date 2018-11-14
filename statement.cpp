@@ -1,3 +1,9 @@
+/*
+File: statement.cpp
+Description: Statementclass functin that uses vectors to push back user read infromation which are numers and used math equations to solve problems
+Email: santj96@gmail.com
+Date: Nov 9, 2018
+*/
 #include<iostream>
 #include<vector>
 #include<string>
