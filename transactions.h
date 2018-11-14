@@ -1,3 +1,10 @@
+/*
+File: main.cpp
+Description: Transaction class decleration
+Email: santj96@gmail.com
+Date: Nov 9, 2018
+*/
+
 #ifndef TRANSACTIONS_H
 #define TRANSACTIONS_H
 #include<iostream>
