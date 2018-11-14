@@ -1,3 +1,10 @@
+/*
+File: statement.h
+Description: Statement class decleration
+Email: santj96@gmail.com
+Date: Nov 9, 2018
+*/
+
 #ifndef STATEMENT_H
 #define STATEMENT_H
 #include<iostream>
