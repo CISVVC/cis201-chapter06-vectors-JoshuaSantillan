@@ -5,6 +5,7 @@ Email: santj96@gmail.com
 Date: Nov 9, 2018
 */
 
+
 Transactions::Transactions() // Constructor
 {
    m_day = 0;
@@ -25,7 +26,7 @@ void Transactions::read()
 {
    std::cout << "Day: ";
    std::cin >> m_day;
-   std::cout << "Transaction: ";
+   std::cout << "Transaction Amount: ";
    std::cin >> m_transaction;
    std::cin.ignore();
    std::cout << "Description of transaction: ";
@@ -46,4 +47,6 @@ std::string Transactions::get_description()
 {
    return m_description;
 }
+
+
 
