@@ -17,6 +17,7 @@ class Statement
   const double RATE = .005;
   std::vector<Transactions> transactions;
   std::vector<double> daily_balance;
+  std::vector<double> compute_daily_balance;
   double m_balance;
   double m_min_balance;
   double m_average_balance;
