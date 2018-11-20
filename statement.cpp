@@ -43,12 +43,13 @@ void Statement::read()
 //finds the balance for each day and uses pushback to store it
 void Statement::balance(std::vector<Transactions> &v) 
 {
-
-   m_balance = 0;
+ // std::vector<double> daily_balance;
+     m_balance = 0;
 
    for (int i = 0; i < MAX_DAY; i++)
    {
       m_balance += v[i].get_transaction(); //v[i] is the same as v.at(i)
+   
       daily_balance.push_back(m_balance);
    }
 }
@@ -74,9 +75,10 @@ double Statement::min_daily_balance(const std::vector<double> &v) // The lowest 
    for (int i = 0; i < MAX_DAY; i++)
    {
       if (v[i] < m_min_balance )
-      {
-         m_min_balance = v[i]; // if min balance is greater than v at i then its new minumum balance
-      }
+        {
+         m_min_balance = v[i];
+          // if min balance is greater than v at i then its new minumum balance
+       }
    }
    return m_min_balance * RATE;
 }
@@ -88,6 +90,8 @@ double Statement::average_daily_balance(const std::vector<double> &v) // balance
    for (int i = 0; i < MAX_DAY; i++)
    {
       sum += v[i];
+   // Iterate through the daily ammount to test to see if its work
+ //  std::cout << v[i] << "\n" << '\t';
    }
     // adds vector up divides it by the month and then multilies it by the interest
    return (sum / MAX_DAY) * RATE;
