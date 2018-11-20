@@ -4,7 +4,7 @@ all: main
 
 main : 
 	@echo "Making the executable -- some warnings can be safely ignored"
-	@g++ -o main *.cpp 
+	@g++ std=c++11 -o main *.cpp 
 
 run : main
 	@echo "Running the program:"
