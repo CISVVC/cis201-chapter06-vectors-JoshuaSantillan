@@ -25,9 +25,10 @@ class Statement
 public:
   Statement();
   void read();
-  void balance(std::vector<Transactions> &v);
   void print();
   double min_daily_balance(const std::vector<double> &v);
   double average_daily_balance(const std::vector<double> &v);
+  std::vector<double> balance(std::vector<Transactions> &v); 
+  double sum_total_for_day(int day);
 };
 #endif
